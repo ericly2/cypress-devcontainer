@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import {useState} from 'react';
 import './App.css';
 
 function App() {
+  const [data, setData] = useState({});
+
+  const fetchData = async () => await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(response => response.json())
+    .then(json => {
+      setData(json);
+      console.log(json)
+    });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <body>
+
+        {data ? 
+        <div className='App-header'>
+          <button onClick={() => fetchData()}>
+            Hit endpoint
+          </button>
+          <p data-testid='id'>Id: {data.id}</p>
+          <p data-testid='title'>Title: {data.title}</p>
+          <p data-testid='userId'>UserId: {data.userId}</p>
+        </div>: null}
+      </body>
     </div>
   );
 }
