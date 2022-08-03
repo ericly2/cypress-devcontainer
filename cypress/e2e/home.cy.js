@@ -4,7 +4,7 @@ it("should load the page", () => {
   cy.get('button').click({force: true});
   cy.wait(1000);
   cy.get('[data-testid="id"]').should('be.visible').then((id) => {
-    expect(id.text().trim()).to.eq('Id: 1');
+    expect(id.text().trim()).to.eq('Id: 12');
   });
   cy.get('[data-testid="userId"]').should('be.visible').then((id) => {
     expect(id.text().trim()).to.eq('UserId: 1');
