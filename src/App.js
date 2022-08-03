@@ -1,13 +1,10 @@
 import {useState} from 'react';
 import './App.css';
-// import body from './data.json';
 
 function App() {
   const [data, setData] = useState({});
 
-  const rand = Math.floor(Math.random() * 10);
-  // body.id = rand;
-  const fetchData = async () => await fetch(`https://jsonplaceholder.typicode.com/todos/20`)
+  const fetchData = async () => await fetch('https://jsonplaceholder.typicode.com/todos/1')
     .then(response => response.json())
     .then(json => {
       setData(json);
