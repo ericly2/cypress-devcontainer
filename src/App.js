@@ -1,10 +1,13 @@
 import {useState} from 'react';
 import './App.css';
 
+const awsNoVPN = 'http://54.219.73.135:8080/todos/1'
+const awsVPN = 'http://172.31.4.148:8080/todos/1'
+
 function App() {
   const [data, setData] = useState({});
 
-  const fetchData = async () => await fetch('https://jsonplaceholder.typicode.com/todos/100')
+  const fetchData = async () => await fetch(awsVPN)
     .then(response => response.json())
     .then(json => {
       setData(json);
