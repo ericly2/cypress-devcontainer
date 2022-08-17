@@ -4,8 +4,8 @@
   "dependencies": {
     "@cypress/code-coverage": "3.10.0",
     "@testing-library/cypress": "8.0.3",
-    "eslint-plugin-cypress": "2.12.1",
-    "start-server-and-test": "^1.14.0"
+    "cypress": "^10.6.0",
+    "eslint-plugin-cypress": "2.12.1"
   },
   "scripts": {
     "open": "cypress open",
@@ -35,8 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "cypress": "^10.6.0"
   }
 }
