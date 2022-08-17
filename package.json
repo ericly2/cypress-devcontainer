@@ -9,7 +9,7 @@
   },
   "scripts": {
     "open": "cypress open",
-    "run": "cypress run --config video=false",
+    "e2e": "cypress run --config video=false",
     "report": "cypress run report --config video=false"
   },
   "eslintConfig": {

@@ -2,6 +2,8 @@ version: '3'
 
 services:
   cypress:
+    ipc: host
+    network_mode: host
     build:
       context: .
       dockerfile: Dockerfile
