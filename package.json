@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "dependencies": {
     "@cypress/code-coverage": "3.10.0",
-    "@testing-library/cypress": "8.0.3",
+    "@testing-library/cypress": "^8.0.3",
     "cypress": "^10.6.0",
-    "eslint-plugin-cypress": "2.12.1"
+    "eslint-plugin-cypress": "2.12.1",
+    "jsrsasign": "10.5.27"
   },
   "scripts": {
     "open": "cypress open",

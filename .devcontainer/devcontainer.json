@@ -5,6 +5,5 @@
     8000
   ],
   "workspaceFolder": "/workspace/cypress-devcontainer",
-  "postCreateCommand": "npm install && ./node_modules/.bin/cypress install",
-  "remoteUser": "node"
+  "postCreateCommand": "npm install && ./node_modules/.bin/cypress install"
 }
