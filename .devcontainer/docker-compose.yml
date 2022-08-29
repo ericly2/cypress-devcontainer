@@ -20,15 +20,11 @@ services:
 
   x11-bridge:
     image: jare/x11-bridge
-
     volumes:
       - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
-
     ports:
       - "8000:8000"
-
     restart: always
-
     environment:
       MODE: tcp
       XPRA_HTML: "yes"

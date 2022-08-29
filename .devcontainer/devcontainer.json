@@ -1,9 +1,6 @@
 {
   "dockerComposeFile": "docker-compose.yml",
   "service": "cypress",
-  "forwardPorts": [
-    8000
-  ],
   "workspaceFolder": "/workspace/cypress-devcontainer",
   "postCreateCommand": "npm install && ./node_modules/.bin/cypress install"
 }
